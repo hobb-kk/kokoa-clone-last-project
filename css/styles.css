@@ -259,6 +259,80 @@ body {
 
 /* chat */
 
+.add__menu {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.add__quote__box {
+  width: 390px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.add__quote__in-box {
+  margin-top: 5px;
+  width: 330px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.quote__img {
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.quote__text {
+  margin-left: 15px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__text-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.quote__text-quote {
+  font-size: 15px;
+}
+
+.add__more__box {
+  margin-left: 10px;
+  width: 390px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.add__more__in-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 120px;
+}
+
+.more__text {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+/* add */
+
 .nav {
   width: 100%;
   height: 60px;
@@ -294,15 +368,4 @@ body {
   color: white;
   font-weight: 600;
   position: absolute;
-}
-
-.nav__add {
-  background-color: tomato;
-  display: flex;
-  position: absolute;
-  top: -20px;
-  right: -6px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
 }
