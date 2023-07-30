@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kokoa-clon-chat</title>
+    <title>Kokoa-clon-chat-list</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -14,7 +14,7 @@
           <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-          <span>16:55</span>
+          <span>16:48</span>
         </div>
         <div class="status-bar__column">
           <span>100%</span>
@@ -22,52 +22,75 @@
           <i class="fas fa-bolt"></i>
         </div>
       </div>
-      <header class="screen-header chat-screen-header">
-        <a class="nav__link" href="chat-list.html"
-          ><i class="fas fa-chevron-left chat-screen-title"></i
-        ></a>
-
-        <span class="chat-screen-header__name">Woorizip-Necomgong</span>
+      <header class="screen-header">
+        <h1 class="screen-header__title">Chat</h1>
+        <div class="screen-header__icons">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-music fa-lg"></i></span>
+          <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
       </header>
-      <main class="friends-screen chat-screen">
-        <div class="chat-list-user-component__column user__chat">
+      <main class="friends-screen">
+        <div
+          onclick="location.href='chat.html'"
+          class="chat-list-user-component__column choice-chat"
+        >
+          <img
+            class="user-component__avatar"
+            src="/Users/iktae/Desktop/coding/kokoaclone/css/screens/4DF5C71B-2C64-492B-A199-C0138894D8CB.jpeg"
+            alt=""
+          />
+          <div class="user-component__text chat1">
+            <h4 class="user-component__title">Woorizip-Necomgong</h4>
+            <h6 class="user-component__subtitle">hololong ~</h6>
+            <span class="chat__notification">1</span>
+          </div>
+        </div>
+        <div class="chat-list-user-component__column choice-chat">
           <img
             class="user-component__avatar"
             src="/Users/iktae/Desktop/coding/kokoaclone/css/screens/4DF5C71B-2C64-492B-A199-C0138894D8CB.jpeg"
             alt=""
           />
           <div class="user-component__text">
+            <h4 class="user-component__title">Woorizip-Necomgong</h4>
             <h6 class="user-component__subtitle">hololong ~</h6>
           </div>
         </div>
-        <span class="chat__time">16:32</span>
-
-        <div class="chat-list-user-component__column my__chat">
-          <div class="user-component__text">
-            <h6 class="user-component__subtitle">hololong ~</h6>
-          </div>
-        </div>
-        <span class="chat__time chat__time__my">16:35</span>
-
-        <div class="chat-list-user-component__column user__chat">
+        <div class="chat-list-user-component__column choice-chat">
           <img
             class="user-component__avatar"
             src="/Users/iktae/Desktop/coding/kokoaclone/css/screens/4DF5C71B-2C64-492B-A199-C0138894D8CB.jpeg"
             alt=""
           />
           <div class="user-component__text">
+            <h4 class="user-component__title">Woorizip-Necomgong</h4>
             <h6 class="user-component__subtitle">hololong ~</h6>
           </div>
         </div>
-        <span class="chat__time">16:55</span>
+        <div class="chat-list-user-component__column choice-chat">
+          <img
+            class="user-component__avatar"
+            src="/Users/iktae/Desktop/coding/kokoaclone/css/screens/4DF5C71B-2C64-492B-A199-C0138894D8CB.jpeg"
+            alt=""
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Woorizip-Necomgong</h4>
+            <h6 class="user-component__subtitle">hololong ~</h6>
+          </div>
+        </div>
+        <div class="chat-list-user-component__column choice-chat">
+          <img
+            class="user-component__avatar"
+            src="/Users/iktae/Desktop/coding/kokoaclone/css/screens/4DF5C71B-2C64-492B-A199-C0138894D8CB.jpeg"
+            alt=""
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Woorizip-Necomgong</h4>
+            <h6 class="user-component__subtitle">hololong ~</h6>
+          </div>
+        </div>
       </main>
-      <div class="chat-screen__chat-box">
-        <input
-          class="chat-box__input"
-          type="text"
-          placeholder="  Write your message"
-        />
-      </div>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__btn">
@@ -77,6 +100,7 @@
           </li>
           <li class="nav__btn">
             <a class="nav__link" href="chat-list.html">
+              <span class="nav__notification">1</span>
               <i class="far fa-comment fa-lg"></i
             ></a>
           </li>
@@ -87,7 +111,7 @@
           </li>
           <li class="nav__btn">
             <a class="nav__link" href="#">
-              <span class="nav__add"> </span>
+              <span class="nav__add"></span>
               <i class="fas fa-ellipsis-h fa-lg"></i
             ></a>
           </li>
