@@ -10,15 +10,17 @@ body {
 .main-box {
   width: 400px;
   height: 700px;
-  background-color: wheat;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("incss/kokoa-back.jpg");
 }
 
 .other-main {
   position: relative;
   background-color: white;
+  background-image: url("incss/kokoa-back.jpg");
 }
 
 .status-bar {
@@ -35,12 +37,21 @@ body {
   margin-bottom: 50px;
   width: 250px;
   height: 250px;
-  background-color: yellowgreen;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  opacity: 0.8;
 }
 
 .login-box {
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
   height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -51,13 +62,26 @@ body {
   width: 242px;
   height: 50px;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  border-bottom: solid 2px black;
+  color: black;
+}
+
+input::placeholder {
+  color: black;
 }
 
 .login-btn {
   width: 250px;
   height: 50px;
   background-color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 /*main*/
@@ -74,6 +98,7 @@ body {
   font-size: 32px;
   font-weight: 600;
   margin-left: 10px;
+  color: white;
 }
 
 .screen-header__icons span {
@@ -102,8 +127,8 @@ body {
   height: 20px;
   margin-top: 10px;
   margin-left: 10px;
-  border-bottom: solid 1px black;
-  opacity: 0.2;
+  border-bottom: solid 1px white;
+  color: white;
   font-size: 15px;
   display: flex;
   justify-content: space-between;
@@ -126,6 +151,7 @@ body {
 
 .user-component__text {
   margin-left: 15px;
+  color: white;
 }
 
 .user-component__title {
@@ -137,7 +163,7 @@ body {
 .user-component__subtitle {
   margin-top: 5px;
   font-size: 15px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* friends */
@@ -146,12 +172,14 @@ body {
 .chat-list-user-component__column {
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-left: 10px;
   padding-left: 10px;
-  width: 380px;
+  width: 360px;
   height: 80px;
   display: flex;
   align-items: center;
   border-radius: 10px;
+
   box-shadow: 3px 3px 10px gray;
   position: relative;
   cursor: pointer;
@@ -218,6 +246,7 @@ body {
   font-size: 25px;
   margin-left: 70px;
   margin-top: 5px;
+  color: white;
 }
 
 .user__chat {
@@ -265,6 +294,7 @@ body {
   width: 300px;
   height: 30px;
   font-size: 20px;
+  color: white;
 }
 
 .add__quote__box {
@@ -287,13 +317,12 @@ body {
   margin-left: 10px;
   width: 100px;
   height: 100px;
-  background-color: blue;
   border-radius: 10px;
 }
 
 .quote__text {
   margin-left: 15px;
-  width: 100px;
+  width: 200px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -302,10 +331,12 @@ body {
 .quote__text-name {
   font-size: 24px;
   font-weight: 600;
+  color: white;
 }
 
 .quote__text-quote {
   font-size: 15px;
+  color: white;
 }
 
 .add__more__box {
@@ -329,6 +360,7 @@ body {
 .more__text {
   margin-top: 15px;
   font-size: 13px;
+  color: white;
 }
 
 /* add */
